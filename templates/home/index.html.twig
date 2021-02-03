@@ -5,16 +5,54 @@
 
 {% block body %}
 
-    <section id="aPropos">
-        <h2>< /à propos></h2>
+<div class="content">
+    <section class="mb-5">
+        <div class="d-flex justify-content-center mt-4">
+            <p class="firstname">Audrey</p>
+            <p class="lastname">Metayer</p>
+            <img class="audrey-img" src="{{ asset('build/audrey.JPG') }}" alt="Audrey Metayer">
+            <div class="home-arch"></div>
+            <p class="balise">< /></p>
+        </div>
+        <h1>Développeuse full stack junior</h1>
     </section>
 
-    <section id="projets">
-        <h2>< /projets></h2>
+    <section id="aPropos" class="a-propos">
+        <div class="a-propos-title">
+        <h2 >< /à propos></h2>
+        </div>
+        <div>
+        <p class="description"> Audrey Metayer - Développeuse full stack junior - PHP Symfony  - React - Actuellement stagiaire en création d’application web chez
+            <span>
+                <a class="smile" href="https://www.smile.eu/fr">
+                Smile
+                </a>
+            </span> à Bordeaux.
+        </p>
+        </div>
+    </section>
+
+    <section id="projets" class="mb-5">
+        <h2 class="mb-4">< /projets></h2>
+        <hr>
+
+
+        {% for project in projects %}
+            <div class="projets" style="display: flex">
+                <p class="project-name" >{{ project.name | capitalize}}</p>
+
+                    <img class="poster" src="build/{{project.poster}}" alt="bb" width="35%">
+
+            </div>
+            <hr>
+        {% endfor %}
+
     </section>
 
     <section id="contact">
         <h2>< /contact></h2>
     </section>
+</div>
+
 
 {% endblock %}

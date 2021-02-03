@@ -37,6 +37,7 @@ class User
      */
     private $job;
 
+
     public function getId(): ?int
     {
         return $this->id;
@@ -89,4 +90,5 @@ class User
 
         return $this;
     }
+
 }

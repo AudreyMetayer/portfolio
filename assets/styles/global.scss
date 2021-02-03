@@ -4,10 +4,11 @@
 
 body {
   background-color: $black;
+  padding:0;
   margin : 0 1em 0 1em;
 }
 
-p, a, span {
+a {
   color: $sable;
   &:hover {
     color: $white;
@@ -15,7 +16,29 @@ p, a, span {
   }
 }
 
-h2 {
+h1, h2, p, span, li, hr {
   color: $sable;
 }
 
+h1 {
+  text-align: center;
+  font-size: 3.5em;
+}
+header {
+  margin-top: 2rem !important;
+  padding-top: 2.5rem;
+}
+
+.content{
+  min-height: calc(100vh - 70px);
+}
+
+hr {
+  border: 1px solid;
+  border-bottom: none;
+  margin: 0.1em;
+}
+
+ul{
+  padding: 0;
+}
