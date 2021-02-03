@@ -1,0 +1,13 @@
+footer{
+  bottom: 0;
+}
+
+div.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a.footer-space{
+  margin-right: 2em;
+}

@@ -1,3 +1,21 @@
-body {
-  background-color: $sable;
+* {
+  font-family: 'Playfair Display', serif;
 }
+
+body {
+  background-color: $black;
+  margin : 0 1em 0 1em;
+}
+
+p, a, span {
+  color: $sable;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+h2 {
+  color: $sable;
+}
+
