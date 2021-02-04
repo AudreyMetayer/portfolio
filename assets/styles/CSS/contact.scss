@@ -1,0 +1,26 @@
+input#fname,
+input#lname,
+input#email,
+textarea#subject {
+  margin: 1em;
+  background-color: $black;
+  border-radius: 5px;
+  border: 1px solid $sable;
+  height: 2.5em;
+  color: $white;
+  padding: 1em;
+  &::placeholder {
+    color: #afafaf;
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+.btn-contact{
+  background-color: $sable;
+  border-radius: 15px;
+  color: $black;
+  width: 40%;
+  &:hover{
+    color: $white;
+  }
+}

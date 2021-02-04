@@ -1,0 +1,64 @@
+.modal-body, .modal-header{
+  background-color: $sable;
+  border: none;
+}
+
+.modal-title{
+  color: $white;
+  font-size: 4.1em;
+  font-weight: 100;
+  text-align: center;
+}
+
+.modal-header{
+  display: block;
+}
+
+.modal-header > hr, .modal-body > hr{
+  color: $white;
+  width: 70%;
+  margin: auto;
+}
+
+div.img-modal{
+  background-color: $sable;
+  display: flex;
+  justify-content: space-between;
+}
+
+p.langages-modal{
+  color: $black;
+  margin-top: 1em;
+  margin-inline-start: 1em;
+  width: 23%;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+b{
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+p.langages-modal > span {
+  color: $black;
+}
+
+.projet-modal{
+  color: $black;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+.description-modal {
+  color: $white;
+  font-size: 1em;
+  margin-left: 2em;
+  width: 70%;
+}
+
+button.close{
+  position: absolute;
+  display: flex;
+  right: 0.7em;
+}

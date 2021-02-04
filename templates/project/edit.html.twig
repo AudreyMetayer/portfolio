@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier un projet{% endblock %}
+
+{% block body %}
+    <h1 class="mb-5">Modifier un projet</h1>
+<div class="form-edit">
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button class="btn btn-danger edit">Modifier</button>
+    {{ form_end(form) }}
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,106 @@
+div.container-fluid.card-project {
+  margin-top: 5em;
+}
+
+.card-body.projects, .list-group-item {
+  background-color: #262626;
+}
+.card {
+  border: 2px solid $sable;
+  border-radius: 2px;
+}
+
+h5.card-title {
+  color: $sable;
+}
+
+p.card-text {
+  color: $white;
+}
+
+li.list-group-item{
+  padding-left: 3em;
+}
+
+.btn-modifier{
+  background-color: $sable;
+  color: $white;
+}
+
+.btn-supp{
+  color: $white;
+  background-color: #dc3444;
+}
+
+label{
+  color: $sable;
+}
+
+
+input#project_name,
+input#project_duration,
+textarea#project_description,
+input#project_client,
+input#project_poster {
+  width: 100%;
+  background-color: $black;
+  border: 1px solid $sable;
+  border-radius: 5px;
+  color: $white;
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+
+textarea#project_description {
+  height: 120px;
+}
+
+div.content.form-add{
+  display: flex;
+  justify-content: center;
+}
+
+div.form-edit{
+  margin-inline-start: 27em;
+  width: 120%;
+}
+
+input#project_languages_1,
+input#project_languages_2,
+input#project_languages_3,
+input#project_languages_4,
+input#project_languages_6,
+{
+  margin-right: 0.3em;
+}
+
+label{
+  margin-right: 1em;
+}
+
+label.required{
+  display: none;
+}
+
+div#project_languages{
+  margin: 0 0 1em 1em;
+}
+
+.btn.btn-danger.edit{
+  margin: 2em 0 0 13em;
+}
+
+.btn-add {
+  margin-top: 3em;
+  background-color: #c089ff;
+  width: 50%;
+  &:hover{
+    color: $white;
+  }
+}
+
+input.btn.btn-add.form{
+  margin-top: 2em;
+  margin-inline-start: 6.5em;
+  margin-bottom: 4em;
+}

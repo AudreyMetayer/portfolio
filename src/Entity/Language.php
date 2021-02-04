@@ -6,12 +6,15 @@ use App\Repository\LanguageRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Form\FormTypeInterface;
 
 /**
  * @ORM\Entity(repositoryClass=LanguageRepository::class)
  */
 class Language
 {
+
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -24,10 +27,6 @@ class Language
      */
     private $name;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $identifier;
 
     /**
      * @ORM\ManyToMany(targetEntity=Projet::class, inversedBy="languages")
@@ -52,18 +51,6 @@ class Language
     public function setName(string $name): self
     {
         $this->name = $name;
-
-        return $this;
-    }
-
-    public function getIdentifier(): ?string
-    {
-        return $this->identifier;
-    }
-
-    public function setIdentifier(string $identifier): self
-    {
-        $this->identifier = $identifier;
 
         return $this;
     }

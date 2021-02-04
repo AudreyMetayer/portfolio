@@ -76,6 +76,9 @@ p.project-name {
   letter-spacing: -0.06em;
   position: relative;
   z-index: 15;
+  &:hover{
+    color: $white;
+  }
   }
 
 .post{

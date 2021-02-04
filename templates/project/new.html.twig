@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Ajouter un projet{% endblock %}
+
+{% block body %}
+
+    <h1 class="mx-auto my-5">Ajouter un projet</h1>
+    <div class="content form-add">
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <input class="btn btn-add form" type='submit' value='Ajouter un projet'>
+    {{ form_end(form) }}
+    </div>
+{% endblock %}

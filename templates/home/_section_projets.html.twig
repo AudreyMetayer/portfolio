@@ -1,0 +1,54 @@
+<section id="projets" class="mb-5">
+    <h2 class="mb-4">< /projets></h2>
+    <hr>
+    {% for project in projects %}
+        <div class="projets" style="display: flex">
+            <p class="project-name" data-toggle="modal" data-target="#project-{{ project.id }}" >{{ project.name | capitalize}}</p>
+
+            <img class="poster" src="/build/{{project.poster}}" alt="photo du projet" width="35%">
+        </div>
+        <hr>
+        <div class="modal fade" id="project-{{ project.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h5 class="modal-title" id="exampleModalLongTitle">{{ project.name | capitalize }}</h5>
+                        <hr>
+                    </div>
+                    <div class="img-modal">
+                        <p class="langages-modal">
+                            <b>< /langages></b>
+                            <br>
+                            <br>
+                            <span>
+                            {% for language in project.languages %}
+                                {{ language.name }}
+                                <br>
+                            {% endfor %}
+                            </span>
+                        </p>
+                        <img src="/build/{{ project.poster }}" alt="Photo du projet" width="65%">
+                    </div>
+                    <div class="modal-body">
+                        <hr>
+                        <div class="mt-3 d-flex flex-row justify-content-around">
+                            <p class="projet-modal">< /le projet></p>
+                            <p class="description-modal">{{ project.description }}</p>
+                        </div>
+                        <div class="mt-3 d-flex flex-row justify-content-around">
+                            <p class="projet-modal">< /durée></p>
+                            <p class="description-modal pl-1">{{ project.duration }}</p>
+                        </div>
+                        <div class="mt-3 d-flex flex-row justify-content-around">
+                            <p class="projet-modal">< /le client></p>
+                            <p class="description-modal">{{ project.client }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</section>
